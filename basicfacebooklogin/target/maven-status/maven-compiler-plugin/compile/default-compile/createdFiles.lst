@@ -1,3 +1,4 @@
-pages/login.class
+pages/newsfeed.class
 stepdefinitions/steps.class
+utils/BROWSER.class
 pages/homepage.class

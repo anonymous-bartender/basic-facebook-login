@@ -1,3 +1,9 @@
+/**
+ * POM file representing the homepage of facebook.com website.
+ * Create a instance of the class by passing active driver instance.
+ * Author: Arghajit Bahttacharya
+ *
+ */
 package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,16 +12,16 @@ import org.openqa.selenium.support.PageFactory;
 
 public class homepage {
 
-    WebDriver driver;
+    private WebDriver driver;
 
-    @FindBy(name="#email")
-    WebElement inputUsername;
+    @FindBy(css="#email")
+    private WebElement inputUsername;
 
     @FindBy(css="#pass")
-    WebElement inputPassword;
+    private WebElement inputPassword;
 
     @FindBy(css="#loginbutton input")
-    WebElement btnLogin;
+    private WebElement btnLogin;
 
 
 
@@ -26,8 +32,12 @@ public class homepage {
 
     public boolean login(String username,String password) {
 
-        /*
-        For better handling we can use try catch block or other semantics for any UI fallback case
+        /**
+         *
+         * For better handling we can use try catch block or other semantics
+         * for any UI fallback case. You error handling has been taken care
+         * at step defination level here - not POM level.
+         *
          */
 
         inputUsername.sendKeys(username);
