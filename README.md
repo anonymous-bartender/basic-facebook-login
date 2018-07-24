@@ -1,5 +1,8 @@
 # basic-facebook-login
-This is a demo project showcasing Automation test using BDD framework.
+This is a demo project showcasing Automation test using BDD framework. 
+
+
+
 
 
 # Steps
@@ -8,15 +11,33 @@ This is a demo project showcasing Automation test using BDD framework.
 git clone https://github.com/arghajit/basic-facebook-login.git
 ```
 2. Go inside the root directory.
-```cd basic-facebook-login/basicfacebooklogin
+```
+cd basic-facebook-login/basicfacebooklogin
 ```
 3. Run the tests.
 ```
 mvn clean test
 ```
 
+
 # Pre-req
 Please go to `mytest.feature` file and change the facebook *username* and *password* with a valid ones.
+
+
+
+# Design
+* This framework is build with **Page Object Model** format where each classes in `pages` dir defines an actual webpage.
+* Tests are built with BDD flavour.
+* At the time of execution JUnit runner bind the `Cucumber.class` and its subordinate feature files with `stepdefinations.java`. 
+* `stepdefination.java` file initiates the `driver` instance and communicate with POM classes.
+
+# Stack
+* Java
+* Cucumber JVM (BDD framework)
+* JUnit 4
+* Maven
+* Selenium
+
 
 # Structure
 ```
@@ -45,9 +66,3 @@ Please go to `mytest.feature` file and change the facebook *username* and *passw
                         └── TestRunner.java	# JUnit Test file
 ```
 
-# Stack
-* Java
-* Cucumber JVM (BDD framework)
-* JUnit 4
-* Maven
-* Selenium
