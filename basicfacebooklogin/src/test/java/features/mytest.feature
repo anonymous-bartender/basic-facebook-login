@@ -5,7 +5,7 @@ Feature: Verify the login feature in facebook
     Scenario: Add a post in facebook
     Given user load https://www.facebook.com in browser
     When user provide login credential
-        | argha.bh@gmail.com     | Argha@2016    |
+        | guest     | guest    |
     And user add a new post
-        | kahskdhkahhkahjkjdh asdadas   |
+        | Hello World   |
     Then post is successfully added
