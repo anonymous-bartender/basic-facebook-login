@@ -3,17 +3,20 @@ This is a demo project showcasing Automation test using BDD framework.
 
 
 # Steps
-1. Open command prompt and type `git clone https://github.com/arghajit/basic-facebook-login.git`
-2. Go inside the folder `cd basic-facebook-login/basicfacebooklogin`
-3. Follow **Execution**
-
-# Pre-req
-Please go to `mytest.feature` file and change the facebook *username* and *password* with a valid ones.
-
-# Execution
+1. Open command prompt and take a pull of this repository.
+```
+git clone https://github.com/arghajit/basic-facebook-login.git
+```
+2. Go inside the root directory.
+```cd basic-facebook-login/basicfacebooklogin
+```
+3. Run the tests.
 ```
 mvn clean test
 ```
+
+# Pre-req
+Please go to `mytest.feature` file and change the facebook *username* and *password* with a valid ones.
 
 # Structure
 ```
