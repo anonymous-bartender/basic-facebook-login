@@ -21,8 +21,8 @@ mvn clean test
 
 
 # Pre-req
-Please go to `mytest.feature` file and change the facebook *username* and *password* with a valid ones.
-
+* Please go to `mytest.feature` file and change the facebook *username* and *password* with a valid ones.
+* Please download [chromedriver](https://chromedriver.storage.googleapis.com/index.html?path=2.40/) and add it to your `PATH` environment variable.
 
 
 # Design
